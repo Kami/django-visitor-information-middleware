@@ -1,0 +1,3 @@
+include README.rst
+include NOTICE.rst
+include requirements.txt
