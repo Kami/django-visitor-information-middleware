@@ -39,7 +39,7 @@ class TimezoneMiddleware(object):
     """
     def process_request(self, request):
         if request.user.is_authenticated():
-            profile = request.user.get_profile()
+            profile = request.user
             user_timezone = \
                 getattr(profile,
                         settings.VISITOR_INFO_PROFILE_TIMEZONE_FIELD,
