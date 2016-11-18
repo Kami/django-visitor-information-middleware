@@ -21,10 +21,12 @@ from pygeoip import GeoIP, MEMORY_CACHE
 from django_visitor_information import constants
 from django_visitor_information import settings
 
+
 __all__ = [
     'TimezoneMiddleware',
     'VisitorInformationMiddleware'
 ]
+
 
 logger = logging.getLogger('django_visitor_information.middleware')
 gi4 = GeoIP(settings.VISITOR_INFO_GEOIP_DATABASE_PATH, MEMORY_CACHE)
